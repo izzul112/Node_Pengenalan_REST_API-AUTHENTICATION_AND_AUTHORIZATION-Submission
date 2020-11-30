@@ -97,7 +97,7 @@ app.post("/user/auth", (req, res) => {
             // user tersedia
             res.json({
                 message: "Logged",
-                token: crypt.encrypt(result[0].id_user), // generate token
+                token: crypt.encrypt(result[0].id_karyawan), // generate token
                 data: result
             })
         } else {
